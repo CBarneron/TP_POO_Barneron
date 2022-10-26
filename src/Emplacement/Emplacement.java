@@ -2,43 +2,25 @@ package Emplacement;
 
 public  class Emplacement{
 
-    private String rangee;
-    private int etagere;
-    private int position;
-
-    public Emplacement (){
+    /*Mas bibliothéque compte 5 ranger (ABCDE) avec chacune 5 étager comprenant 50 emplacement  donc 5**/
+    protected   int [][] etagereTab = new int[5][50];
+    protected String [] rangeTab= new String [2];
 
 
+    public int[][] getEtagereTab() {
+        return etagereTab;
     }
 
-    public Emplacement (String rangee, int etagere, int position){
-        this.rangee = rangee;
-        this.etagere=etagere;
-        this.position = position;
+    public void setEtagerTab(int[][] emplacementTab) {
+        this.etagereTab = etagereTab;
     }
 
-    public String getRangee() {
-        return rangee;
+    public String[] getRangeTab() {
+        return rangeTab;
     }
 
-    public void setRangee(String rangee) {
-        this.rangee = rangee;
-    }
-
-    public int getEtagere() {
-        return etagere;
-    }
-
-    public void setEtagere(int etagere) {
-        this.etagere = etagere;
-    }
-
-    public int getPosition() {
-        return position;
-    }
-
-    public void setPosition(int position) {
-        this.position = position;
+    public void setRangeTab(String[] rangeTab) {
+        this.rangeTab = rangeTab;
     }
     /// instanciation d'emplacement
 
