@@ -18,6 +18,5 @@ public class Main {
         l2.emprunterLivre();
         l2.emprunterLivre();
 
-
         ;
     }}
