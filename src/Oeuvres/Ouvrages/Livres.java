@@ -14,18 +14,17 @@ public class Livres extends Oeuvres {
 
     //Attributs
     private String auteurs;
-    private String titres;
-    private Integer nb_exemplaires;
+       private Integer nb_exemplaires;
     //Constructeur
 
     public Livres(String auteurs,String titres, Integer nb_exemplaires){
         this.auteurs=auteurs;
-        this.titres=titres;
+        super.titres=titres;
         this.nb_exemplaires=nb_exemplaires;
     }
     public Livres(String auteurs,String titres, Integer nb_exemplaires,int statut){
         this.auteurs=auteurs;
-        this.titres=titres;
+        super.titres=titres;
         this.nb_exemplaires=nb_exemplaires;
         super.statut= statut;
     }
@@ -68,6 +67,7 @@ public class Livres extends Oeuvres {
         rangerLivres() définit le statut du livres de nondisponibles à disponibles
     */
 
+
     public void  rendreLivres(){
         if (super.statut ==1){
             System.out.println("Le livres , "+this.titres+"est déjà disponibles");
@@ -84,6 +84,14 @@ public class Livres extends Oeuvres {
         {
             System.out.println("Le livres ,"+this.titres+" est indisponibles");
         }
+    }
+
+    public String getAuteurs() {
+        return auteurs;
+    }
+
+    public void setAuteurs(String auteurs) {
+        this.auteurs = auteurs;
     }
 }
 

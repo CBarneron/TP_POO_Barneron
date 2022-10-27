@@ -3,11 +3,13 @@ package Oeuvres;
 import Emplacement.Emplacement;
 import com.sun.tools.javac.Main;
 
+import javax.print.attribute.standard.Media;
 import java.sql.Date;
+import Oeuvres.Oeuvres;
+    public class Oeuvres extends Emplacement   {
 
-public class Oeuvres extends Emplacement {
-
-        private Date date;
+    protected String titres;
+    private Date date;
         private String editeur;
         private String titre;
         private String genre;
@@ -73,6 +75,12 @@ public class Oeuvres extends Emplacement {
 
     public void setStatut(int statut) {
         this.statut = statut;
+    }
+
+    @Override
+    public String toString() {
+        //super.toString();
+        return this.getTitre()+" de "+ super.getAuteurs()+" x"+"("+this.getStatut()+")";
     }
 }
 

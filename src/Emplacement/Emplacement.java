@@ -35,7 +35,7 @@ public  class Emplacement {
     }
 
 
-    public static void Emplacement(String[] args) {
+    public static void Emplacement(String[][][] args) {
         String[][][] e = new String[3][4][5];
 
         for (int l = 0; l < e.length ; l++) {
@@ -53,6 +53,8 @@ public  class Emplacement {
 
 
     }
+
+
 }
 
 
