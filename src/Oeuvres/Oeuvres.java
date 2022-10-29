@@ -6,26 +6,25 @@ import com.sun.tools.javac.Main;
 
 import javax.print.attribute.standard.Media;
 import java.sql.Date;
-import Oeuvres.Oeuvres;
+
     public class Oeuvres extends Emplacement   {
 
     protected String titres;
     private Date date;
-        private String editeur;
-        private String titre;
-        private String genre;
-        protected int statut;
+    private String editeur;
+    private String titre;
+    private String genre;
+    protected int statut;
 
         public Oeuvres( String titre,String genre ,Date date, String editeur,int statut) {
-
             this.titre = titre ;
             this.genre = genre;
             this.date = date;
             this.editeur = editeur;
             this.statut = statut;
         }
-        public Oeuvres() {
 
+        public Oeuvres() {
         }
 
         public Date getDate() {
