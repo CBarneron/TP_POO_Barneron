@@ -6,10 +6,10 @@ public class Magazine extends Oeuvres {
     private String parution; //hebodamadaire,trimestriel, quotidiens
 
     public  Magazine(){};
-    public  Magazine(String titres,int statut,String[][][] emplacement,String parution){
+    public  Magazine(String titres,int statut,String emplacement,String parution){
         super.titres=titres;
         super.statut=statut;
-        super.emplacemnt=emplacement;
+        super.emplacement=emplacement;
         this.parution=parution;
     };
     public String getParution() {

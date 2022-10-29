@@ -1,6 +1,7 @@
 package Oeuvres;
 
 import Emplacement.Emplacement;
+import Oeuvres.Ouvrages.Livres;
 import com.sun.tools.javac.Main;
 
 import javax.print.attribute.standard.Media;
@@ -77,10 +78,10 @@ import Oeuvres.Oeuvres;
         this.statut = statut;
     }
 
-    @Override
-    public String toString() {
+    //@Override
+   // public String toString() {
         //super.toString();
-        return this.getTitre()+" de "+ super.getAuteurs()+" x"+"("+this.getStatut()+")";
-    }
+      //  return this.getTitre()+" de "+ getAuteurs()+" x"+"("+this.getStatut()+")";
+    //}
 }
 

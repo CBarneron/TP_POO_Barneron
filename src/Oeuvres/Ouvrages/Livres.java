@@ -93,5 +93,17 @@ public class Livres extends Oeuvres {
     public void setAuteurs(String auteurs) {
         this.auteurs = auteurs;
     }
+    @Override
+    public  String toString(){
+        return  super.getTitre()+this.getAuteurs() +this.getNb_exemplaires()+ super.getStatut();
+    }
+
+    public Integer getNb_exemplaires() {
+        return nb_exemplaires;
+    }
+
+    public void setNb_exemplaires(Integer nb_exemplaires) {
+        this.nb_exemplaires = nb_exemplaires;
+    }
 }
 
